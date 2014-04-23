@@ -4,13 +4,13 @@
 # 
 # sudo yum -y install openssl-devel kernel-devel
 # 
-# wget http://www.keepalived.org/software/keepalived-1.2.7.tar.gz -O ~/rpmbuild/SOURCES/keepalived-1.2.7.tar.gz
+# wget http://www.keepalived.org/software/keepalived-1.2.12.tar.gz -O ~/rpmbuild/SOURCES/keepalived-1.2.12.tar.gz
 # 
-# wget https://raw.github.com/nmilford/rpm-keepalived/master/keepalived.spec -O ~/rpmbuild/SPECS/keepalived.spec
+# wget https://raw.github.com/sjlouw/rpm-keepalived/master/keepalived.spec -O ~/rpmbuild/SPECS/keepalived.spec
 # 
 # rpmbuild -bb ~/rpmbuild/SPECS/keepalived.spec
 
-%define version 1.2.7
+%define version 1.2.12
 %define release 1
 
 # $Id$
@@ -113,6 +113,9 @@ fi
 %{_mandir}/man8/keepalived.8*
 
 %changelog
+* Wed Apr 23 2014 1.2.12
+- Updated to 1.2.12
+
 * Sat Jun 29 2013 Nathan Milford <nathan@milford.io> 1.2.7
 - Updated to 1.2.7
 
